@@ -1,17 +1,68 @@
 body {
     background-color: rgb(234, 234, 234);
+    margin-bottom: 100px;
 }
 
 .container {
-    text-align: center;
+    margin: auto;
+    width: 35%;
 }
 
 .title {
     width: 100%;
     margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.column {
-    display: block;
+form div {
+    margin-bottom: 20px;
 }
 
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;   
+}
+
+form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form textarea {
+    padding-bottom: 70px;
+    resize: vertical;
+}
+
+form button {
+    float: right;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+}
+
+form button:active{
+    padding: 11px 28px;
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}

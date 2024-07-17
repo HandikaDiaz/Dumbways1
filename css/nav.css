@@ -55,3 +55,13 @@ nav ul li a#active {
     text-decoration: none;
     font-weight: 800;
 }
+
+nav ul li a:hover {
+    color: rgb(139, 135, 135);
+    font-weight: normal;
+}
+
+nav ul li a:active {
+    color: black;
+    font-weight: 600;
+}

@@ -22,38 +22,39 @@
             </button>
         </div>
     </nav>
-    <div>
-        <h1 class="title">Contact Me</h1>
-        <form action="">
-            <div class="column">
-                <label for="">Name</label>
-                <input type="text">
+    <div class="container">
+        <h1 class="title">Get In Touch</h1>
+        <form id="form">
+            <div>
+                <label for="inputName">Name</label>
+                <input id="inputName" type="text">
             </div>
-            <div class="column">
-                <label for="">Email</label>
-                <input type="email">
+            <div>
+                <label for="inputEmail">Email</label>
+                <input id="inputEmail" type="email">
             </div>
-            <div class="column">
-                <label for="">Phone Number</label>
-                <input type="number">
+            <div>
+                <label for="inputNumber">Phone Number</label>
+                <input id="inputNumber" type="number">
             </div>
-            <div class="column">
-                <label for="">Subject</label>
-                <select name="Select" id="">
+            <div>
+                <label for="inputSelect">Subject</label>
+                <select id="inputSelect">
                     <option value hidden>Select</option>
                     <option value="">Full Stack Developer</option>
                     <option value="">Front End Developer</option>
                     <option value="">Back End Developer</option>
                 </select>
             </div>
-            <div class="column">
-                <label for="">Your Massage</label>
-                <textarea name="" id=""></textarea>
+            <div>
+                <label for="inputMassage">Your Massage</label>
+                <textarea id="inputMassage"></textarea>
             </div>
-            <div class="column">
-                <button>Submit</button>
+            <div>
+                <button type="button" onclick="getData()">Submit</button>
             </div>
         </form>
     </div>
 </body>
+<script src="js/contact.js"></script>
 </html>
