@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     background-color: rgb(234, 234, 234);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
 }
 
 .flex-container {
@@ -32,21 +36,35 @@ body {
 }
 
 .contact-card {
-    width: 10%; 
-    margin: 50px 30px 50px 65px; 
-    display: block; 
-    background-color: black; 
-    color: white; 
-    border-radius: 20px; 
-    padding: 7px 30px; 
-    text-decoration: none; 
+    width: 12%;
     text-align: center;
+    margin: 50px 30px 50px 65px;
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 30px;
+    text-decoration: none;
     font-size: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.contact-card:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
 }
 
 .dw-cv {
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
+    transition: color 0.5s, font-weight 0.3s, font-size 0.3s;
+}
+
+.dw-cv:hover {
+    color: rgb(203, 203, 203);
+    font-weight: normal;
+    transition: 0.3s;
 }
 
 .text-cv {
@@ -72,9 +90,19 @@ body {
     width: 90px;
 }
 
+.linkedin:hover {
+    width: 80px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
 .ig {
     width: 65px; 
     margin-right: 10px;
+}
+
+.ig:hover {
+    width: 55px; 
 }
 
 .fb {
@@ -82,12 +110,21 @@ body {
     margin-right: 20px;
 }
 
+.fb:hover {
+    width: 50px; 
+}
+
 .twt {
     width: 50px;
 }
+
+.twt:hover {
+    width: 40px;
+}
+
 .img-card {
     background-color: white; 
-    width: 90%; 
+    width: 100%; 
     margin: 50px 50px 50px 0; 
     box-shadow: 5px 5px 20px gray; 
     border-radius: 10px;

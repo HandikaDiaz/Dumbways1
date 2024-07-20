@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Project</title>
+    <link rel="icon" href="image/icon.jpg">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/project.css">
 </head>
@@ -13,15 +14,51 @@
             <ul>
                 <li><a href=""><img src="image/logo.png" alt="logo HD" class="logo"></a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="project.html" id="active">My Project</a></li>
+                <li><a href="addproject.html">My Project</a></li>
             </ul>
         </div>
         <div class="right">
             <button>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">Contact Me</a>
             </button>
         </div>
     </nav>
-    
+    <div class="page-style">
+        <h1 class="title" id="project-name"></h1>
+        <div class="container">
+            <img src="${blog[i].image}" alt="" class="project-image" id="project-image">
+            <div class="detail">
+                <p class="duration">Duration</p>
+                <div class="flex-icon">
+                    <img src="image/date.png" alt="">
+                    <p id="project-start">
+                        <p id="project-end"></p>
+                    </p>
+                </div>
+                <div class="flex-icon">
+                    <img src="image/clock.png" alt="">
+                    <p> 1 Bulan</p>
+                </div>
+                <p class="technology">Technologies</p>
+                <div class="flex-check">
+                    <div class="flex-box">
+                        <img src="image/swift.png" alt="" id="swift">
+                        <label id="swift-label" for="swift">Swift</label>
+                        <img src="image/ruby.png" alt="" style="margin-left: 50px;" id="ruby">  
+                        <label id="ruby-label" for="ruby">Ruby</label>
+                    </div>
+                    <div class="flex-box">
+                        <img src="image/phython.png" alt="" id="phyton">
+                        <label id="phyton-label" for="phyton">Phyton</label>
+                        <img src="image/js.png" alt="" style="margin-left: 50px;" id="javascript">
+                        <label id="javascript-label" for="javascript">Javascript</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="project-description" class="description"></p>
+    </div>
 </body>
+<script src="js/project.js"></script>
+<script src="js/addproject.js"></script>
 </html>

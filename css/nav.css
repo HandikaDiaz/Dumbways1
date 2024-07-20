@@ -31,10 +31,24 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    transition: color 0.3s, font-weight 0.3s, font-size 0.3s;
 }
 
 nav ul li a#active {
     font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: rgb(203, 203, 203);
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+nav ul li a:active {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s;
 }
 
 .right {
@@ -44,24 +58,24 @@ nav ul li a#active {
 }
 
 .right button {
+    border-style: none;
+    background-color: white;
+}
+
+.right button a {
+    color: white;
+    background-color: black;
     padding: 7px 20px;
     border-radius: 5px;
-    border-style: none;
-    background-color: black;
-}
-
-.right a {
-    color: white;
     text-decoration: none;
     font-weight: 800;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-nav ul li a:hover {
-    color: rgb(139, 135, 135);
-    font-weight: normal;
-}
-
-nav ul li a:active {
+.right a:hover {
     color: black;
-    font-weight: 600;
+    background-color: white;
+    transition: 0.5s;
 }
+
+

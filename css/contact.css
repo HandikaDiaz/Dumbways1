@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     background-color: rgb(234, 234, 234);
     margin-bottom: 100px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
 }
 
 .container {
-    margin: auto;
+    margin: 50px auto;
     width: 35%;
+    display: block;
 }
 
 .title {
@@ -25,16 +30,19 @@ input, select, textarea {
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    box-shadow: 2px 2px 5px gray;   
+    box-shadow: 2px 2px 9px gray;  
 }
 
 form label {
+    margin-bottom: 10px;
+    display: block;
     font-size: 20px;
     font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+}
+
+form select {
+    cursor: pointer;
 }
 
 form textarea {
@@ -52,11 +60,14 @@ form button {
     color: white;
     background-color: black;
     cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+
 }
 
 form button:hover {
     background-color: white;
     color: black;
+    transition: 0.5s;
 }
 
 form button:active{
